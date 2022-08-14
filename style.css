@@ -1,0 +1,39 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh !important;
+    width: 100vw !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: row; /*em conjunto com o display faz a div ficar flexivel*/
+}
+
+#nav-bar {
+    width: 260px;
+    height: calc(100% - 2px);
+    border: solid 1px #000000;
+}
+
+.header {
+    height: 60px;
+    width: 100%;
+    background-color: lightblue;
+    border-bottom: solid 1px black;
+    border-right: solid 1px black;
+}
+
+.add {
+    width: 95px;
+    height: calc(100% - 61px);
+    position: absolute; /*é uma camada flutuante que joga o conteudo para frente*/
+    top: 60px; /*só funciona se estiver com position absolute e serve para iniciar nos 60px*/
+    right: 0px;/*mesma ideia do top, mas nesse caso impede que o mesmo aconteça do lado direito*/
+    border-left: solid 1px black;
+    border-bottom: solid 1px black;
+}
